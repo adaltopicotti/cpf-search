@@ -17,6 +17,7 @@ var db = admin.firestore()
 
 module.exports = {
     
+    
     async index(req, res) {
         var person = {}
 
@@ -56,7 +57,8 @@ module.exports = {
                         {
                             "nome": response.nome,
                             "cpf": response.cpf,
-                            "consultaID": response.consultaID
+                            "consultaID": response.consultaID,
+                            "date": (new Date()).toLocaleString('pt-BR')
                         }
                         )
                         .then(() => {

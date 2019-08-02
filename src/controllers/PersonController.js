@@ -58,7 +58,7 @@ module.exports = {
                             "nome": response.nome,
                             "cpf": response.cpf,
                             "consultaID": response.consultaID,
-                            "date": (new Date()).toLocaleString('pt-BR')
+                            "date": Date.now()
                         }
                         )
                         .then(() => {

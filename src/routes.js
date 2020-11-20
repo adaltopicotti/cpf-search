@@ -7,4 +7,6 @@ const PersonController = require('./controllers/PersonController')
 
 routes.get('/cpf/:id', PersonController.cpfSearch)
 
+routes.get('login_check', PersonController.login)
+
 module.exports = routes
